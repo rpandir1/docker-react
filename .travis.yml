@@ -4,8 +4,8 @@ services:
 
 
 before_intsall:
-  - docker build frontend/docker-react -f dockerfile.dev .
+  - docker build rpandir1/docker-react -f dockerfile.dev .
 
 
 script:
-  - docker run -e CI=treu root/docker-react npm run test -- --coverage
+  - docker run -e CI=true rpandir1/docker-react npm run test -- --coverage
