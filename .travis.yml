@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+
+before_intsall:
+  - docker build root/docker-react -f dockerfile.dev .
+
+
+script:
+  - docker run -e CI=treu root/docker-react npm run test -- --coverage
