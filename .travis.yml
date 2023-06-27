@@ -7,7 +7,7 @@ services:
 
 
 before_intsall:
-  - docker build rpandir1/docker-react -f dockerfile.dev .
+  - docker build -t  rpandir1/docker-react -f dockerfile.dev .
 
 
 script:
