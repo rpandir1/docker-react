@@ -4,7 +4,7 @@ services:
 
 
 before_intsall:
-  - docker build root/docker-react -f dockerfile.dev .
+  - docker build frontend/docker-react -f dockerfile.dev .
 
 
 script:
